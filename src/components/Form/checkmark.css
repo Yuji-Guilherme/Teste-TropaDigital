@@ -1,0 +1,33 @@
+.checkmark {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 3px;
+  left: 0;
+  background-color: transparent;
+  border: solid 2px hsl(17, 59%, 51%);
+  border-radius: 50%;
+}
+
+input:checked ~ .checkmark {
+  background-color: #CC6138;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.checkmark:after {
+  left: 2px;
+  top: 2px;
+  width: 8px;
+  height: 8px;
+  background-color: white;
+  border-radius: 50%;
+}
