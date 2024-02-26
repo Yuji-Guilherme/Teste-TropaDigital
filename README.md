@@ -16,7 +16,7 @@
 ### 🛠 Tecnologias utilizadas e a motivação
 - ``React``
 - ``Typescript`` - Tipagem
-- ``Next.js`` - Para gerenciamento de rotas, server side, otimização de imagem e fontes
+- ``Next.js`` - Para gerenciamento de rotas, server side, otimização de imagem e fontes, facilitação do deploy
 - ``zod + React Hook Form`` - Criação de schemas, validação de formulários
 - ``zustand`` - Gerenciamento de estados
 - ``tailwind`` - Estilização e produtividade
