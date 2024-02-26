@@ -31,7 +31,7 @@ function RegisterDialog({
             . Verifique sua caixa de entrada e clique no link “Confirmar
             E-mail”.
           </Dialog.Text>
-          <Dialog.Text className="mt-10">
+          <Dialog.Text className="mt-10 sm:mt-7">
             Caso não tenha recebido o e-mail clique em “Enviar e-mail novamente”
             que enviaremos um novo e-mail.
           </Dialog.Text>

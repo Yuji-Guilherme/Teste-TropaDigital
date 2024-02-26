@@ -6,6 +6,10 @@ const DialogButtonWrapper = tw.div`
   items-center
   gap-5
   mt-5
+
+  sm:mt-8
+  sm:mb-5
+  sm:gap-6
 `;
 
 const UserEmail = tw.strong`

@@ -10,6 +10,9 @@ const DialogForm = tw.form`
 
   md:gap-8
   md:mt-5
+  sm:gap-10
+  sm:mb-5
+  sm:mt-6
 `;
 
 const DialogInputWrapper = tw.div`
