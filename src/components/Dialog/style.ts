@@ -32,6 +32,11 @@ const Dialog = tw.dialog`
   md:h-[420px]
   md:pt-12
   md:px-10
+  sm:px-6
+  sm:pb-6
+  sm:pt-8
+  sm:w-4/5
+  sm:h-auto
 `;
 
 const Title = tw.h3`
@@ -41,6 +46,8 @@ const Title = tw.h3`
   tracking-wide
 
   md:text-2xl
+  sm:text-2xl
+  sm:text-center
 `;
 
 const Text = tw.p`
@@ -51,6 +58,8 @@ const Text = tw.p`
   leading-9
 
   md:text-sm
+  sm:text-sm
+  sm:leading-8
 `;
 
 const SecondButton = tw.button`
@@ -62,6 +71,7 @@ const SecondButton = tw.button`
   tracking-wide
 
   md:text-sm
+  sm:text-sm
 `;
 
 export { Root, Dialog, Title, Text, SecondButton };
