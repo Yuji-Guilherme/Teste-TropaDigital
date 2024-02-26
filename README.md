@@ -1,5 +1,10 @@
 # 🧑‍🚀 Teste Tropa Digital
 
+### ↪️ Rotas da aplicação
+- ``/`` - Login
+- ``/register`` - Cadastro
+- ``/dashboard`` - Dashboard
+
 ### 🔍 Oque está no projeto?
 1. resposividade
 2. validação de formulário
