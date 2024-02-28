@@ -1,9 +1,9 @@
 'use client';
 
-import Image from 'next/image';
 import { useSideBar } from './hook';
 import { NavBar } from './NavBar';
-import { MenuIcon, ExitIcon } from './Icon';
+import { ExitButton, MenuButton } from './Buttons';
+import { UserImage } from './UserImage';
 
 import * as S from './style';
 
@@ -18,28 +18,18 @@ function Sidebar({ username, email }: SidebarProps) {
     <S.Aside minimized={minimized}>
       <S.SecondBg />
       <S.MenuButtonWrapper minimized={minimized}>
-        <button onClick={() => changeMinimizeState(!minimized)}>
-          <MenuIcon className={S.menuIconClassName} />
-        </button>
+        <MenuButton onClick={() => changeMinimizeState(!minimized)} />
       </S.MenuButtonWrapper>
       <S.UserAreaWrapper minimized={minimized}>
         <S.UserTextWrapper>
           <S.UserTitle>{username}</S.UserTitle>
           <S.UserEmail>{email}</S.UserEmail>
         </S.UserTextWrapper>
-        <Image
-          src="/user-image.png"
-          alt="image do usuário"
-          width={118}
-          height={118}
-          className={S.userImageClassName}
-        />
+        <UserImage />
       </S.UserAreaWrapper>
       <NavBar />
       <S.ExitButtonWrapper minimized={minimized}>
-        <button onClick={handleExit}>
-          <ExitIcon className={S.exitIconClassName} />
-        </button>
+        <ExitButton onClick={handleExit} />
       </S.ExitButtonWrapper>
     </S.Aside>
   );
