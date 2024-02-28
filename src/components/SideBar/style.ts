@@ -17,9 +17,9 @@ const Aside = tw.aside<TwExtendProps>`
   transition-all
   overflow-hidden
   drop-shadow-lg
+  z-10
 
   md:py-5
-  sm:z-10
   sm:h-full
   ${(p) => (p.minimized ? 'w-[62px]' : 'w-[350px] md:w-72 sm:w-screen')}
 `;
@@ -30,11 +30,10 @@ const SecondBg = tw.span`
   w-full
   top-0
   left-0
-  z-10
+  z-20
   bg-new-white
 
   md:h-[150px]
-  sm:z-20
 `;
 
 const MenuButtonWrapper = tw.div<TwExtendProps>`
@@ -42,8 +41,7 @@ const MenuButtonWrapper = tw.div<TwExtendProps>`
   flex
   items-center
   transition-all
-  z-20
-  sm:z-30
+  z-30
   ${(p) => (p.minimized ? 'pr-0 justify-center' : 'pr-8 justify-end')}
 `;
 

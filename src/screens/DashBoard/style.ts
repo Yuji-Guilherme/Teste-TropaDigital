@@ -13,6 +13,7 @@ const Main = tw.main<TwMainProps>`
   pb-12
   transition-all
 
+  md:w-3/4
   ${(p) => (p.minimized ? 'ml-40 sm:ml-9' : 'ml-[350px] md:ml-[288px] sm:ml-9')}
 `;
 
